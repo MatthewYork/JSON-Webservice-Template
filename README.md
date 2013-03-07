@@ -23,7 +23,7 @@ How To Use It?
 
 To make a request, instantiate a new MYJSONWebservice instance and call the desired webmethod
 
-//Instantiate the webservice class and set the delegate to the calling view controller
+    //Instantiate the webservice class and set the delegate to the calling view controller
     MYJSONWebservice *service = [[MYJSONWebservice alloc] initWithDelegate:self];
     
     //Make a simple request
@@ -38,7 +38,7 @@ To make a request, instantiate a new MYJSONWebservice instance and call the desi
     
 To Respond to this request, add the appropriate delegate method to the calling class. An example of this using the provided methods is as so.
 
-//Handle Sample Response Data
+    //Handle Sample Response Data
     -(void)sampleMethodDidReturnWithDictionary:(NSDictionary *)responseDictionary{
         if (responseDictionary) {
             NSLog(@"%@", responseDictionary);
