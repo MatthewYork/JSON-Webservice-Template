@@ -18,6 +18,7 @@
 		F02BB1C016E800F100E3D502 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F02BB1BF16E800F100E3D502 /* Default-568h@2x.png */; };
 		F02BB1C316E800F100E3D502 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02BB1C216E800F100E3D502 /* MYViewController.m */; };
 		F02BB1C616E800F100E3D502 /* MYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02BB1C416E800F100E3D502 /* MYViewController.xib */; };
+		F02BB1CE16E8013A00E3D502 /* MYJSONWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = F02BB1CD16E8013A00E3D502 /* MYJSONWebservice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		F02BB1C116E800F100E3D502 /* MYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		F02BB1C216E800F100E3D502 /* MYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
 		F02BB1C516E800F100E3D502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MYViewController.xib; sourceTree = "<group>"; };
+		F02BB1CC16E8013A00E3D502 /* MYJSONWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJSONWebservice.h; sourceTree = "<group>"; };
+		F02BB1CD16E8013A00E3D502 /* MYJSONWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJSONWebservice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				F02BB1C116E800F100E3D502 /* MYViewController.h */,
 				F02BB1C216E800F100E3D502 /* MYViewController.m */,
 				F02BB1C416E800F100E3D502 /* MYViewController.xib */,
+				F02BB20716E814ED00E3D502 /* Webservice */,
 				F02BB1B016E800F100E3D502 /* Supporting Files */,
 			);
 			path = JSONWebserviceTest;
@@ -105,6 +109,15 @@
 				F02BB1BF16E800F100E3D502 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F02BB20716E814ED00E3D502 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				F02BB1CC16E8013A00E3D502 /* MYJSONWebservice.h */,
+				F02BB1CD16E8013A00E3D502 /* MYJSONWebservice.m */,
+			);
+			name = Webservice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				F02BB1B616E800F100E3D502 /* main.m in Sources */,
 				F02BB1BA16E800F100E3D502 /* MYAppDelegate.m in Sources */,
 				F02BB1C316E800F100E3D502 /* MYViewController.m in Sources */,
+				F02BB1CE16E8013A00E3D502 /* MYJSONWebservice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
