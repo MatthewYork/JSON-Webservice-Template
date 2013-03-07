@@ -1,7 +1,7 @@
 JSON-Webservice-Template
 ========================
 
-This is a template for JSON webservice interaction. It is designed to be used for rapid-prototyping integration with JSON webservices when starting a new project, especially (but not limited to) those that utilize the MVC4 Web API.
+This is a template for JSON webservice interaction. It is designed to be used for rapid-prototyping integration with JSON webservices when starting a new project, especially (but not limited to) those that utilize the Microsoft MVC4 Web API. This template is not meant to be a "drop-in" solution, rather it is to be a jumping-off point for your own, custom webservice implementation.
 
 
 Requirements
