@@ -38,13 +38,13 @@ To make a request, instantiate a new MYJSONWebservice instance and call the desi
     
 To Respond to this request, add the appropriate delegate method to the calling class. An example of this using the provided methods is as so.
 //Handle Sample Response Data
--(void)sampleMethodDidReturnWithDictionary:(NSDictionary *)responseDictionary{
-    if (responseDictionary) {
-        NSLog(@"%@", responseDictionary);
+    -(void)sampleMethodDidReturnWithDictionary:(NSDictionary *)responseDictionary{
+        if (responseDictionary) {
+            NSLog(@"%@", responseDictionary);
+        }
+        else {
+            //Handle Error
+            NSLog(@"Error making request");
+        }
     }
-    else {
-        //Handle Error
-        NSLog(@"Error making request");
-    }
-}
 
