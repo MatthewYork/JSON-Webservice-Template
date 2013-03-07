@@ -49,3 +49,19 @@ To Respond to this request, add the appropriate delegate method to the calling c
         }
     }
 
+
+Modifying and Extending
+========================
+
+MYJSONWebservice is meant to be a jumping-off point for the creation of your own, self-contained webservice interaction class. It is not meant to be a "drop-in" solution, so much as a guide and model for convenient and portable code.
+
+When creating your own method, add its declaration to the interface found in 'MYJSONWebservice.h' and implement it in 'MYJSONWebservice.m'. Add any new delegate callbacks to the delegate protocol definition. See below for an example
+
+    @protocol WebserviceDelegate
+    @optional
+    -(void)sampleMethodDidReturnWithDictionary:(NSDictionary *)responseDictionary;
+    ...
+    -(void)yourNewResponseMethod:(BOOL)response;
+    @end
+
+
