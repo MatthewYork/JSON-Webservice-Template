@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0557DD117A0D5AD00E5E4DA /* MYJSONOperation.h in Sources */ = {isa = PBXBuildFile; fileRef = C0557DCF17A0D5AD00E5E4DA /* MYJSONOperation.h */; };
+		C0557DD217A0D5AD00E5E4DA /* MYJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0557DD017A0D5AD00E5E4DA /* MYJSONOperation.m */; };
 		F02BB1AA16E800F100E3D502 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BB1A916E800F100E3D502 /* UIKit.framework */; };
 		F02BB1AC16E800F100E3D502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BB1AB16E800F100E3D502 /* Foundation.framework */; };
 		F02BB1AE16E800F100E3D502 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BB1AD16E800F100E3D502 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0557DCF17A0D5AD00E5E4DA /* MYJSONOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = MYJSONOperation.h; sourceTree = "<group>"; };
+		C0557DD017A0D5AD00E5E4DA /* MYJSONOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJSONOperation.m; sourceTree = "<group>"; };
 		F02BB1A616E800F100E3D502 /* JSONWebserviceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONWebserviceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02BB1A916E800F100E3D502 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F02BB1AB16E800F100E3D502 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +120,8 @@
 			children = (
 				F02BB1CC16E8013A00E3D502 /* MYJSONWebservice.h */,
 				F02BB1CD16E8013A00E3D502 /* MYJSONWebservice.m */,
+				C0557DCF17A0D5AD00E5E4DA /* MYJSONOperation.h */,
+				C0557DD017A0D5AD00E5E4DA /* MYJSONOperation.m */,
 			);
 			name = Webservice;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 				F02BB1BA16E800F100E3D502 /* MYAppDelegate.m in Sources */,
 				F02BB1C316E800F100E3D502 /* MYViewController.m in Sources */,
 				F02BB1CE16E8013A00E3D502 /* MYJSONWebservice.m in Sources */,
+				C0557DD117A0D5AD00E5E4DA /* MYJSONOperation.h in Sources */,
+				C0557DD217A0D5AD00E5E4DA /* MYJSONOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +321,7 @@
 				F02BB1CB16E800F100E3D502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

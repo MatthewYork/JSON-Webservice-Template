@@ -25,8 +25,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define HTTP_METHOD_POST @"POST"
+#define HTTP_METHOD_GET @"GET"
+#define HTTP_METHOD_PUT @"PUT"
+#define HTTP_METHOD_DELETE @"DELETE"
+
+#define kMaxConcurrentConnections 5
+
 #pragma mark - MySampleClass Interface
-/* This is a class created purely for the sake of demoing webservice interaction with a custom object. Its use is restricted to the method "sampleComplexWebserviceMethod" in MYJSONWebservice. You may delete its interface and implementation at your discretion.
+/*  This is a class created purely for the sake of demoing webservice interaction with a custom object.
+ Its use is restricted to viewDidLoad: in MYViewController.m (construction) and the "sampleComplexWebserviceMethod"
+ in MYJSONWebservice.m (consumption). You may delete its interface and implementation at your discretion.
  */
 @interface MYSampleClass : NSObject
 @property (nonatomic, retain) NSString* FirstName;
@@ -47,17 +56,31 @@
 -(void)sampleMethodDidReturnWithDictionary:(NSDictionary *)responseDictionary;
 @end
 
+
+// Typedef Blocks
+typedef void (^SampleWebserviceBlock) (NSDictionary *responseDictionary);
+typedef void (^SampleComplexWebserviceBlock) (NSDictionary *responseDictionary);
+
 @interface MYJSONWebservice : NSObject
 
-//Delegate
+// Properties
 @property (weak) id <WebserviceDelegate> delegate;
+@property (nonatomic, retain) NSOperationQueue *MYJSONOperationQueue;
 
-
+// Init
 -(id)initWithDelegate:(id <WebserviceDelegate>)delegate;
 
-//Webservice Methods
+// Request Builder
++(NSMutableURLRequest *)RequestForMethod:(NSString *)method withBodyData:(NSData *)data forHttpMethod:(NSString *)httpMethod;
+
+// Delegated Webservice Methods
 -(void)sampleWebserviceMethod:(NSString *)sampleString;
 -(void)sampleComplexWebserviceMethod:(MYSampleClass *)sampleClass;
+
+// Block Based Webservice Methods
+-(void)sampleWebserviceMethod:(NSString *)sampleString completion:(SampleWebserviceBlock)completion;
+-(void)sampleComplexWebserviceMethod:(MYSampleClass *)sampleClass completion:(SampleComplexWebserviceBlock)completion;
+
 @end
 
 
